@@ -25,7 +25,7 @@
       <form class="myform">
         <h2 class="RegistrationForm">Registration Form For University</h2>
 
-        <p class="enter-form">
+        <section class="enter-form">
           <label class="label" for="name">First Name</label>
           <input
             class="input"
@@ -36,12 +36,12 @@
             required
           />
 
-          <label class="label" for="name">Last Name</label>
+          <label class="label" for="lastname">Last Name</label>
           <input
             class="input"
             type="text"
-            name="name"
-            id="name"
+            name="lastname"
+            id="lastname"
             placeholder="Write your Last Name"
             required
           />
@@ -66,12 +66,11 @@
             required
           />
 
-          <label class="label" for="password">Confirm Password</label>
+          <label class="label" for="confirmPassword">Confirm Password</label>
           <input
             class="input"
             type="password"
-            name="password"
-            id="id"
+            name="confirmPassword"
             id="confirmPassword"
             placeholder="Confirm your Password"
             required
@@ -86,32 +85,30 @@
             placeholder="Write your Contact Number"
             required
           />
-        </p>
+        </section>
 
-        <p class="select-faculty">
+        <section class="select-faculty">
           <label class="label" for="select">Select Your Faculty</label>
           <i class="select-icon"></i>
           <select class="select" name="faculty" id="select">
             <option value="Computer Science">Computer Science</option>
-            <option value="Bussiness Development">Business Develpment</option>
+            <option value="Business Development">Business Develpment</option>
             <option value="Graphic Design">Graphic Design</option>
             <option value="Economy">Economy</option>
             <option value="Engineering">Engineering</option>
             <option value="Medical Science">Medical Science</option>
           </select>
-        </p>
-        <label class="message">
+        </section>
+        <label class="message" for="message">
           <p class="text">Enter Your Message Here</p>
           <textarea class="messagearea" name="message" id="message"> </textarea>
         </label>
 
-        <p class="checkbox-container">
-          <label class="checkbox-label">
-            <input type="checkbox" checked />
-            <span class="checkbox-custom"></span>
-            I have selected my program
-          </label>
-        </p>
+        <div class="checkbox-container">
+          <input type="checkbox" checked id="checkbox" />
+
+          <label for="checkbox"> I have selected my program </label>
+        </div>
 
         <button class="button" type="submit">Register Here!</button>
       </form>
